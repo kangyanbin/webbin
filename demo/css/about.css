@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*404内容*/
+.bar{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background: url(../img/texture-dark.png);
+}
+.bar span.white{
+	font-size: 30px;
+	line-height: 5;
+}
+.bar .input-box{
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	margin-left: -230px;
+	width: 460px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 2px;
+	border-style: solid;
+	border-width: 2px;
+	text-align: left;
+	padding-left:10px;
+}
+/*内容模块*/
+.middle{
+	width: 100%;
+	padding:70px 0px 30px;
+}
+.middle .con{
+	padding:20px;
+}
+.middle .con p{
+	line-height: 1.5;
+}
+.middle .pic-img img{
+	width: 350px;
+}
+/*学校模块*/
+.main{
+	background:url(../img/texture.png);
+	text-align: center;
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+.main>p,
+.content .top>p{
+	margin: 0;
+}
+.main .m-t{
+	font-size: 25px;
+}
+.main .m-b{
+	font-size: 25px;
+	color: #fff;
+	margin-top: 10px;
+}
+.main a{
+	display: inline-block;
+	width: 100px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+	background-color: #FDA51F;
+	text-align: center;
+	line-height: 2;
+	border:1px solid #000;
+}
+/*列表模块*/
+.content{
+	width: 100%;
+}
+.content .top{
+	text-align: center;
+	padding-top: 30px;
+}
+.content .top .top-h{
+	font-size: 30px;
+}
+.content .top .top-c{
+	line-height: 30px;
+}
+.content .list-content{
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+.content .list-content .col-3{
+	display: inline-block;
+	padding:10px;
+}
+.content .list-content .col-3 img{
+	width: 100%;
+	display: block;
+	border-radius: 3px 3px 0px 0px;
+	margin-bottom: 10px;
+}
+.content .list-content .box-centent{
+	border-radius: 3px;
+	text-align: center;
+}
+.content .list-content .box-centent p{
+	line-height: 2;
+}
+.content .list-content .box-centent .text{
+	font-size: 20px;
+}

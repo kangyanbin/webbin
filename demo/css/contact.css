@@ -1,0 +1,144 @@
+@charset "utf-8";
+/*404内容*/
+.bar{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background: url(../img/texture-yellow.png);
+}
+.bar span.white{
+	font-size: 30px;
+	line-height: 5;
+}
+.bar .input-box{
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	margin-left: -230px;
+	width: 460px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 2px;
+	border-style: solid;
+	border-width: 2px;
+	text-align: left;
+	padding-left:10px;
+}
+/*内容模块*/
+.middle{
+	width: 100%;
+	padding:50px 0px 30px;
+}
+.middle .map{
+	/* text-align: center;
+	font-size: 50px;
+	line-height: 7;
+	background-color: #EFEEEC; */
+	height: 400px;
+	padding: 20px 30px;
+}
+#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+.middle .content{
+	padding:0px 25px;
+}
+.middle .content .title{
+	/*padding:0px 25px;*/
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.5;
+}
+.middle .content .name{
+	color:rgb(70,197,185);
+}
+.middle .content .email{
+	color:rgb(253,175,55);
+}
+.middle .content .message{
+	color:rgb(138,198,32);
+}
+#name,
+#email{
+	display: block;
+	width: 100%;
+	height: 70px; 
+	background: none;
+	padding-top: 30px;	
+	border: 0;
+	outline:none;
+	margin-top: -30px; 
+	font-size: 16px;
+	border-bottom: 1px solid rgba(70,197,185,1);
+	border-radius: 0;
+}
+#email{
+	border-bottom: 1px solid rgba(253,175,55,1);
+}
+#message{
+	display: block;
+	width: 100%;
+	background: none;
+	border: 0;
+	outline:none;
+	font-size: 16px;
+	border-bottom: 1px solid rgba(138,198,32,1);
+	border-radius: 0;
+	resize:vertical;
+}
+.middle .content .btn{
+	width: 100%; 
+	height: 45px;
+	padding: 0;
+	margin: 0;
+	background: #007BFF;
+	color: #fff;
+	border: 0;
+	outline:none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+/*学校模块*/
+.main{
+	background:url(../img/texture.png);
+	text-align: center;
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+.main>p,
+.content .top>p{
+	margin: 0;
+}
+.main .m-t{
+	font-size: 25px;
+}
+.main .m-b{
+	font-size: 25px;
+	color: #fff;
+	margin-top: 10px;
+}
+.main a{
+	display: inline-block;
+	width: 100px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+	background-color: #FDA51F;
+	text-align: center;
+	line-height: 2;
+	border:1px solid #000;
+}
+/*信息模块*/
+.msg{
+	width: 100%;
+	padding: 20px 0px;
+}
+.msg .box{
+	padding: 10px;
+}
+.msg .box .con{
+	border: 2px solid #DCDCDC;
+	border-radius: 3px;
+	padding: 20px;
+}
+.msg .box img{
+	display: block;
+}

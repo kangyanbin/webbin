@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*-----------------color-------------------*/
+
+/* 字体 */
+.gray{
+	color: #808080;
+}
+.light-gray{
+	color: #dddddd;
+}
+.light-green{
+	color: #7AAE2E;
+}
+.deep-green{
+	color: #338727;
+}
+.green{
+	color: #008000;
+}
+.white{
+	color: #ffffff;
+}
+.orange{
+	color: #FF9C00;
+}
+.red{
+	color: #ff0000;
+}
+.black{
+	color: #000000;
+}
+.cy{
+	color: #0BB3A3;
+}
+
+
+.light-blue{
+	color: #746fca;
+}
+.light-white{
+	color: #FFD58C;
+}
+.light-orange{
+	color: #FDA51F;
+}
+.light-gray{
+	color: #DFDFDF;
+}
+.deep-pink{
+	color: #FA3664;
+}
+.min-green{
+	color: #86C417;
+}
+
+/* 背景 */
+.bg-deep-green{
+	background-color: #338727;
+}
+.bg-gray{
+	background-color: #555555;
+}
+.bg-cy{
+	background-color: #0BB3A3;
+}
+.bg-white{
+	background-color: #ffffff;
+}
+.bg-orange{
+	background-color: #FF9C00;
+}
+.bg-gray{
+	background-color: #808080;
+}
+.bg-red{
+	background-color: #ff0000;
+}
+.bg-green{
+	background-color: #008000;
+}
+.bg-black{
+	background-color: #000000;
+}
+.bg-light-gray{
+	background-color: #dddddd;
+}
+
+
+.bg-light-blue{
+	background-color: #746fca;
+}
+.bg-light-white{
+	background-color: #FFD58C;
+}
+.bg-light-orange{
+	background-color: #FDA51F;
+}
+.bg-light-gray{
+	background-color: #DFDFDF;
+}
+.bg-deep-pink{
+	background-color: #FA3664;
+}
+.bg-min-green{
+	background-color: #86C417;
+}
+/* 边框 */
+.bd-gray{
+	border-color: #555555;
+}
+.bd-green{
+	border-color: #7AAE2E;
+}
+.bd-white{
+	border-color: #ffffff;
+}
+.bd-orange{
+	border-color: #FF9C00;
+}
+.bd-gray{
+	border-color: #808080;
+}
+.bd-red{
+	border-color: #ff0000;
+}
+.bd-green{
+	border-color: #008000;
+}
+.bd-black{
+	border-color: #000000;
+}
+.bd-light-gray{
+	border-color: #dddddd;
+}
+
+
+.bd-light-blue{
+	border-color: #746fca;
+}
+.bd-light-white{
+	border-color: #FFD58C;
+}
+.bd-light-orange{
+	border-color: #FDA51F;
+}
+.bd-light-gray{
+	border-color: #DFDFDF;
+}
+.bd-deep-pink{
+	border-color: #FA3664;
+}
+.bd-min-green{
+	border-color: #86C417;
+}
