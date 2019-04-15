@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* minapp页 */
+.nav_bar .list .item a{
+    color: #000;
+}
+.content{
+    width: 100%;
+}
+.content .banner{
+    position: relative;
+    width: 100%;
+}
+.content .banner img{
+    display: block;
+    width: 100%;
+}
+.one,
+.two{
+    overflow: hidden;
+    padding-top: 1rem;
+}
+.two .two_title{
+    position: relative;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.two .two_title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5rem;
+    width: 3rem;
+    height: .2rem;
+    background-color: #fcb256;
+}
+.two .two_pic,{
+    width: 100%;
+}
+.two .two_pic img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.one{
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.one .content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+.one .content.no{
+    flex-direction: inherit;
+}
+.one .content>div{
+    width: 50%;
+}
+.one .content .one_pic img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.one .content .one_txt p{
+    font-size: .8rem;
+    line-height: 1.1rem;
+    color: #666;
+}
+.one .content .one_txt .xin{
+    color: #fcb256;
+    margin-right: .2rem;
+}
+.two{
+    background: url(../img/sys-two.jpg) no-repeat;
+    background-size: cover;
+    color: #fcb256;
+    padding-bottom: 3rem;
+}
+.two .wrapper{
+    width: 100%;
+}
+.two .wrapper .two_box{
+    float: left;
+    width: 15%;
+    margin: 2rem .833333% 0rem;
+    text-align: center;
+}
+.two .wrapper .two_box img{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+/* 动画部分 */
+.two_fadeIn{
+    transform: scale(0);
+    transition: transform .8s ease-in-out;
+}
+.one_fadeIn_left{
+    transform: translateX(40rem);
+    transition: transform .8s ease-in-out;
+}
+.one_fadeIn_right{
+    transform: translateX(-40rem);
+    transition: transform .8s ease-in-out;
+}
+.fadeOut{
+    transform:none;
+}
+@media screen and (max-width: 768px) {
+    .one{
+        text-align: center;
+    }
+    .one .content{
+        display: block;
+    }
+    .one .content>div{
+        width: 100%;
+    }
+    .one .content .one_pic img{
+        width: 60%;
+    }
+    .two .wrapper .two_box{
+        width: 20%;
+        margin: 2rem 2.5% 0rem;
+    }
+}

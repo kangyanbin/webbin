@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* index页 */
+.content{
+    width: 100%;
+}
+.content .banner{
+    position: relative;
+    width: 100%;
+}
+.content .banner img{
+    display: block;
+    width: 100%;
+}
+.banner .title{
+    position: absolute;
+    color: #fff;
+    z-index: 12;
+    left: 5%;
+    top: 50%;
+}
+.banner .title h4{
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+.banner .title p{
+    font-size: 1rem;
+}
+.content .banner::after{
+    content: '';
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six{
+    overflow: hidden;
+    padding-top: 1rem;
+}
+.one .one_title,
+.two .two_title,
+.three .three_title,
+.four .four_title,
+.five .five_title,
+.six .six_title{
+    position: relative;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.one .one_title::after,
+.two .two_title::after,
+.four .four_title::after,
+.five .five_title::after,
+.six .six_title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5rem;
+    width: 3rem;
+    height: .2rem;
+    background-color: #fcb256;
+}
+.one .one_info,
+.two .two_info,
+.three .three_info{
+    line-height: 1.4rem;
+    font-size: 1rem;
+}
+.one .one_pic,
+.three .three_pic{
+    width: 100%;
+}
+.one .one_pic img,
+.three .three_pic img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.two{
+    padding-bottom: 2rem;
+    background: url(../img/two-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.two .two_info,
+.three .three_info{
+    text-align: center;
+}
+.two .content{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: .5rem;
+}
+.two .content .txt{
+    width: 60%;
+    font-size: .8rem;
+}
+.two .content .txt p{
+    color: #666;
+}
+.two .content  img{
+    width: 40%;
+    display: block;
+}
+.three{
+    background-color: #f6f6f6;
+    padding-top: 1rem;
+}
+.three .left,
+.three .right{
+    width: 46%;
+    margin: 0 2%;
+    background-color: #fff;
+    float: left;
+    margin-bottom: 1rem;
+}
+.three .three_title{
+    padding-bottom: 0;
+}
+.four{
+    background: #fdf6ee;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.four .four_content{
+    background-color: #fff;
+    padding: 1rem 3rem;
+    width: 100%;
+}
+.four .four_content .user{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.four .four_content .user img{
+    width: 100%;
+}
+.four .four_content .user_name{
+    text-align: center;
+}
+.four .four_content .user_address{
+    text-align: center;
+    font-size: .9rem;
+}
+.four .four_content .user_info{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fcb256;
+}
+.four .four_content .user_detail{
+    text-align: center;
+    line-height: 1.4rem;
+    color: #666;
+}
+.five{
+    background-color: #fff;
+    width: 100%;
+}
+.five .picmap{
+    width: 60%;
+    float: left;
+}
+.five img.picmap{
+    display: block;
+}
+.five .data{
+    width: 40%;
+    box-sizing: border-box;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    float: left;
+}
+.five .data li{
+    margin-bottom: 2rem;
+}
+.five .data h2{
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+    color: #fcb256;
+}
+.five .data p{
+    font-size: .9rem;
+}
+.six{
+    background: url(../img/six-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 2.3rem;
+}
+.six .box{
+    width: 30%;
+    margin: 1rem 1.666666% 3rem;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+}
+.six .box img{
+    width: 35%;
+    display: block;
+    margin: 2.5rem auto 0;
+}
+.six .box .box_title{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: .9rem;
+}
+.six .box .box_text{
+    text-align: left;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+    font-size: .8rem;
+    height: 4rem;
+}
+/* 轮播图 */
+.swiper-container {
+    width: 100%;
+    margin: 20px auto;
+}
+.swiper-pagination-fraction{
+    right: 15px !important;
+    left: inherit;
+    bottom: 55px;
+    width: 5rem;
+    font-size: 2rem;
+}
+.swiper-button-next, 
+.swiper-button-prev{
+    width: 27px;
+    height: 27px;
+    background-size: 27px 27px;
+    padding: 1rem;
+    top: 90%;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.swiper-button-prev{
+    right: 60px;
+    left: inherit;
+}
+/* 动画部分 */
+.one_fadeIn{
+    transform: scale(0);
+    transition: transform .8s ease-in-out;
+}
+.three_fadeIn_left{
+    transform: translateX(-40rem);
+    transition: transform .8s ease-in-out;
+}
+.three_fadeIn_right{
+    transform: translateX(40rem);
+    transition: transform .8s ease-in-out;
+}
+.six_fadeIn_left{
+    transform: translateX(-40rem);
+    transition: transform .8s ease-in-out;
+}
+.six_fadeIn_center{
+    transform: translateY(-80rem);
+    transition: transform .8s ease-in-out;
+}
+.six_fadeIn_right{
+    transform: translateX(40rem);
+    transition: transform .8s ease-in-out;
+}
+.fadeOut{
+    transform:none;
+}
+@media screen and (max-width: 768px) {
+    .banner .title h4{
+        font-size: 1rem;
+        margin-bottom: .4rem;
+    }
+    .banner .title p{
+        font-size: .5rem;
+    }
+    .one .one_info,
+    .two .two_info,
+    .three .three_info{
+        font-size: .9rem;
+    }
+    .one .one_pic img{
+        width: 100%;
+    }
+    .three .left,
+    .three .right{
+        width: 96%;
+    }
+    .three .three_pic img{
+        width: 45%;
+    }
+    .four .four_content{
+        padding: 1rem .8rem;
+    }
+    .five .data{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .five .picmap{
+        width: 100%;
+    }
+    .five .data li{
+        margin-bottom: .7rem;
+    }
+    .six .box{
+        width: 100%;
+    }
+    .six .box .box_title{
+        font-size: 1.2rem;
+    }
+    .swiper-pagination-fraction{
+        bottom: 25px;
+    }
+    .swiper-button-next, 
+    .swiper-button-prev{
+        display: none;
+    }
+}
