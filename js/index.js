@@ -17,7 +17,11 @@ window.onload = function(){
     //     }
     // }
     addEvent(window,'scroll',function(){
-        if(window.scrollY > (banner.offsetHeight + 48)){
+        // console.log(window.pageYOffset);
+        // console.log(window.scrollY);
+        // console.log(banner.offsetHeight);
+        // window.scrollY在ie下不兼容
+        if(window.pageYOffset > (banner.offsetHeight + 48)){
             nav.classList.add("scroll");
         }else{
             nav.classList.remove("scroll");
@@ -61,8 +65,19 @@ var isScroll = {
     /*开始*/
     start: function (_el) {
         var arr = document.querySelectorAll(_el);
-        arr.forEach(function(e){
-            var isScrollTop = window.scrollY;
+        // arr.prototype.forEach = Array.prototype.forEach;
+        // console.log(arr)
+        // arr.forEach(function(e){
+        //     var isScrollTop = window.scrollY;
+        //     var isWindowHeiget = window.innerHeight * 0.8;
+        //     var _class = e.getAttribute('data-animation');
+        //     if (isScrollTop + isWindowHeiget > e.offsetTop) {
+        //         e.classList.add(_class);
+        //     }
+        // });
+        Array.prototype.forEach.call(arr,function(e){
+            // console.log("foreach");
+            var isScrollTop = window.pageYOffset;
             var isWindowHeiget = window.innerHeight * 0.8;
             var _class = e.getAttribute('data-animation');
             if (isScrollTop + isWindowHeiget > e.offsetTop) {
@@ -77,6 +92,7 @@ function addEvent(obj,type,fn){
     //ie写法
     if(obj.attachEvent){ 
         obj.attachEvent('on'+type,function(){
+            console.log("ie")
             fn.call(obj);
         })
     }else{
